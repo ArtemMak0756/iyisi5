@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="#">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="icon" type="image/png" href="./img/logo.png">
+	<title>Iyisi5</title>
+	<style>
+		.bonus-update {
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			color: #cdd9ff;
+			padding: 8px 12px;
+			border-radius: 6px;
+			font-family: "Inter", sans-serif;
+			font-size: 14px;
+		}
+
+		.bonus-update .date {
+			background: rgba(255, 194, 0, 0.51);
+			border: 1px solid rgb(255, 212, 0);
+			padding: 2px 8px;
+			border-radius: 5px;
+			color: #ffffff;
+			font-weight: 500;
+		}
+
+		.bonus-update .icon {
+			font-size: 16px;
+		}
+	</style>
+	<style>
+		.main__block_rate {
+			text-align: center;
+			color: #fff;
+		}
+
+		.stars {
+			display: flex;
+			direction: ltr;
+			font-size: 28px;
+			color: #444;
+			cursor: pointer;
+			transition: transform 0.2s ease;
+		}
+
+		.stars span {
+			transition: color 0.25s, transform 0.15s;
+			user-select: none;
+		}
+
+		.stars span:hover {
+			transform: scale(1.2);
+		}
+
+		.stars span.active {
+			color: gold;
+		}
+
+		.stars span.hover {
+			color: #ffd966;
+		}
+
+		.main__block_rate p {
+			font-size: 14px;
+			color: #ccc;
+		}
+
+		.rating-value {
+			font-size: 20px;
+			display: block;
+			color: #fff;
+			margin-bottom: 4px;
+		}
+
+		.main__block_company{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 4px;
+		}
+		.main__block_company img{
+			max-width: 40px;
+			width: auto;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+    <div class="container header__container">
+        <div class="header__logo">
+            <a href="./"><img src="./img/logo.png" alt="img-logo"></a>
+        </div>
+    </div>
+</header>
+	<div class="wrapper">
+
+		<main class="main" id="main">
+			<div class="container">
+				<h1 class="main__title title_main center">
+					Türkiye’nin En İyi 5 Online Casinoları
+				</h1>
+				<p class="main__text center">
+					Biz, Türkiye’den gelen tutkulu oyun uzmanlarından oluşan bir ekibiz.  Amacımız, her oyuncuya güven, kolaylık ve güvenlik sunan dürüst ve güvenilir çevrim içi casino sıralamaları hazırlamaktır.
+				</p>
+
+				<div class="main__info">
+					<div class="main__span">
+						<img src="./img/main_icon1.png" alt="img">
+						<span>Hızlı Ödemeler</span>
+					</div>
+					<div class="main__span">
+						<img src="./img/main_icon2.png" alt="img">
+						<span>Güvenilir ve Emniyetli</span>
+					</div>
+					<div class="main__span">
+						<img src="./img/main_icon3.png" alt="img">
+						<span>Tamamen Mobil Uyumluluk</span>
+					</div>
+					<div class="bonus-update">
+						<span class="icon">📅</span>
+						<span>Bonus teklifleriyle ilgili son güncelleme: </span>
+						<span id="currentDate" class="date"></span>
+					</div>
+				</div>
+
+				<div class="main__block">
+					<div class="main__block_img">
+						<img src="./img/7slots.png" alt="img">
+					</div>
+					<div class="main__block_wrap">
+						<div class="main__block_text">
+							<p>Hoş Geldin Bonusu</p>
+							<strong>50.000TL + 300 Free Spins</strong>
+						</div>
+						<div class="main__block_rate">
+							<span class="rating-value">9.9</span>
+							<div class="stars" data-initial="5">
+								<span data-value="1" class="active">★</span>
+								<span data-value="2" class="active">★</span>
+								<span data-value="3" class="active">★</span>
+								<span data-value="4" class="active">★</span>
+								<span data-value="5" class="active">★</span>
+							</div>
+							<p>(7165) Kullanıcı Oyu </p>
+						</div>
+						<div class="main__block_company">
+							<img src="./img/visa.png" alt="">
+							<img src="./img/mastercard.jpg" alt="">
+							<img src="./img/skrill.webp" alt="">
+							<img src="./img/jetoncash.png" alt="">
+							<img src="./img/applepay.png" alt="">
+							<img src="./img/gpay.jpg" alt="">
+						</div>
+					</div>
+					<a href="#" class="main__block_link">Bonus Alın</a>
+				</div>
+				<div class="main__block">
+					<div class="main__block_img">
+						<img src="./img/Merhabet.png" alt="img">
+					</div>
+					<div class="main__block_wrap">
+						<div class="main__block_text">
+							<p>Hoş Geldin Bonusu</p>
+							<strong>55.000TL + 550 Free Spins</strong>
+						</div>
+						<div class="main__block_rate">
+							<span class="rating-value">9.85</span>
+							<div class="stars" data-initial="5">
+								<span data-value="1" class="active">★</span>
+								<span data-value="2" class="active">★</span>
+								<span data-value="3" class="active">★</span>
+								<span data-value="4" class="active">★</span>
+								<span data-value="5" class="active">★</span>
+							</div>
+							<p>(4264) Kullanıcı Oyu </p>
+						</div>
+						<div class="main__block_company">
+							<img src="./img/visa.png" alt="">
+							<img src="./img/mastercard.jpg" alt="">
+							<img src="./img/skrill.webp" alt="">
+							<img src="./img/jetoncash.png" alt="">
+							<img src="./img/applepay.png" alt="">
+							<img src="./img/gpay.jpg" alt="">
+						</div>
+					</div>
+					<a href="#" class="main__block_link">Bonus Alın</a>
+				</div>
+				<div class="main__block">
+					<div class="main__block_img">
+						<img src="./img/Bettilt.png" alt="img">
+					</div>
+					<div class="main__block_wrap">
+						<div class="main__block_text">
+							<p>Hoş Geldin Bonusu</p>
+							<strong>Up to 40,000 TL - 130% bonus + 350 free spins or 350 TL free bet</strong>
+						</div>
+						<div class="main__block_rate">
+							<span class="rating-value">9.82</span>
+							<div class="stars" data-initial="5">
+								<span data-value="1" class="active">★</span>
+								<span data-value="2" class="active">★</span>
+								<span data-value="3" class="active">★</span>
+								<span data-value="4" class="active">★</span>
+								<span data-value="5" class="active">★</span>
+							</div>
+							<p>(8941) Kullanıcı Oyu </p>
+						</div>
+						<div class="main__block_company">
+							<img src="./img/visa.png" alt="">
+							<img src="./img/mastercard.jpg" alt="">
+							<img src="./img/skrill.webp" alt="">
+							<img src="./img/jetoncash.png" alt="">
+							<img src="./img/applepay.png" alt="">
+							<img src="./img/gpay.jpg" alt="">
+						</div>
+					</div>
+					<a href="#" class="main__block_link">Bonus Alın</a>
+				</div>
+				<div class="main__block">
+					<div class="main__block_img">
+						<img src="./img/Bahsegel.png" alt="img">
+					</div>
+					<div class="main__block_wrap">
+						<div class="main__block_text">
+							<p>Hoş Geldin Bonusu</p>
+							<strong>Bahsegel -Up to 60.000 TL - 100% welcome bonus</strong>
+						</div>
+						<div class="main__block_rate">
+							<span class="rating-value">9.8</span>
+							<div class="stars" data-initial="5">
+								<span data-value="1" class="active">★</span>
+								<span data-value="2" class="active">★</span>
+								<span data-value="3" class="active">★</span>
+								<span data-value="4" class="active">★</span>
+								<span data-value="5" class="active">★</span>
+							</div>
+							<p>(4128) Kullanıcı Oyu </p>
+						</div>
+						<div class="main__block_company">
+							<img src="./img/visa.png" alt="">
+							<img src="./img/mastercard.jpg" alt="">
+							<img src="./img/skrill.webp" alt="">
+							<img src="./img/jetoncash.png" alt="">
+							<img src="./img/applepay.png" alt="">
+							<img src="./img/gpay.jpg" alt="">
+						</div>
+					</div>
+					<a href="#" class="main__block_link">Bonus Alın</a>
+				</div>
+				<div class="main__block">
+					<div class="main__block_img">
+						<img src="./img/BasariBet.png" alt="img">
+					</div>
+
+					<div class="main__block_wrap">
+						<div class="main__block_text">
+							<p>Hoş Geldin Bonusu</p>
+							<strong>50.000TL + 300 Free Spins</strong>
+						</div>
+
+						<div class="main__block_rate">
+							<span class="rating-value">9.75</span>
+							<div class="stars" id="stars">
+								<span data-value="1" class="active">★</span>
+								<span data-value="2" class="active">★</span>
+								<span data-value="3" class="active">★</span>
+								<span data-value="4" class="active">★</span>
+								<span data-value="5" class="active">★</span>
+							</div>
+							<p>(9825) Kullanıcı Oyu</p>
+						</div>
+
+						<div class="main__block_company">
+							<img src="./img/visa.png" alt="">
+							<img src="./img/mastercard.jpg" alt="">
+							<img src="./img/skrill.webp" alt="">
+							<img src="./img/jetoncash.png" alt="">
+							<img src="./img/applepay.png" alt="">
+							<img src="./img/gpay.jpg" alt="">
+						</div>
+					</div>
+
+					<a href="#" class="main__block_link">Bonus Alın</a>
+				</div>
+				<div class="main__block">
+					<div class="main__block_img">
+						<img src="./img/Mobilbahis.png" alt="img">
+					</div>
+
+					<div class="main__block_wrap">
+						<div class="main__block_text">
+							<p>Hoş Geldin Bonusu</p>
+							<strong>200% up to 5,000TL + 100 Free spins & 1,000TL Free bet</strong>
+						</div>
+
+						<div class="main__block_rate">
+							<span class="rating-value">9.72</span>
+							<div class="stars">
+								<span data-value="1" class="active">★</span>
+								<span data-value="2" class="active">★</span>
+								<span data-value="3" class="active">★</span>
+								<span data-value="4" class="active">★</span>
+								<span data-value="5" class="active">★</span>
+							</div>
+							<p>(9825) Kullanıcı Oyu</p>
+						</div>
+
+						<div class="main__block_company">
+							<img src="./img/visa.png" alt="">
+							<img src="./img/mastercard.jpg" alt="">
+							<img src="./img/skrill.webp" alt="">
+							<img src="./img/jetoncash.png" alt="">
+							<img src="./img/applepay.png" alt="">
+							<img src="./img/gpay.jpg" alt="">
+						</div>
+					</div>
+
+					<a href="#" class="main__block_link">Bonus Alın</a>
+				</div>
+				<div class="main__block">
+					<div class="main__block_img">
+						<img src="./img/leon.png" alt="img">
+					</div>
+
+					<div class="main__block_wrap">
+						<div class="main__block_text">
+							<p>Hoş Geldin Bonusu</p>
+							<strong>100% Casino bonus up to 50,000 TL & 50% Sports bonus up to 30,000 TL</strong>
+						</div>
+
+						<div class="main__block_rate">
+							<span class="rating-value">9.7</span>
+							<div class="stars">
+								<span data-value="1" class="active">★</span>
+								<span data-value="2" class="active">★</span>
+								<span data-value="3" class="active">★</span>
+								<span data-value="4" class="active">★</span>
+								<span data-value="5" class="active">★</span>
+							</div>
+							<p>(9825) Kullanıcı Oyu</p>
+						</div>
+
+						<div class="main__block_company">
+							<img src="./img/visa.png" alt="">
+							<img src="./img/mastercard.jpg" alt="">
+							<img src="./img/skrill.webp" alt="">
+							<img src="./img/jetoncash.png" alt="">
+							<img src="./img/applepay.png" alt="">
+							<img src="./img/gpay.jpg" alt="">
+						</div>
+					</div>
+
+					<a href="#" class="main__block_link">Bonus Alın</a>
+				</div>
+				<div class="main__block">
+					<div class="main__block_img">
+						<img src="./img/best10.png" alt="img">
+					</div>
+
+					<div class="main__block_wrap">
+						<div class="main__block_text">
+							<p>Hoş Geldin Bonusu</p>
+							<strong>200% up to 1,000 TL or 100% up to 10,000 TL + 50 Free Spins</strong>
+						</div>
+
+						<div class="main__block_rate">
+							<span class="rating-value">9.65</span>
+							<div class="stars">
+								<span data-value="1" class="active">★</span>
+								<span data-value="2" class="active">★</span>
+								<span data-value="3" class="active">★</span>
+								<span data-value="4" class="active">★</span>
+								<span data-value="5" class="active">★</span>
+							</div>
+							<p>(9825) Kullanıcı Oyu</p>
+						</div>
+
+						<div class="main__block_company">
+							<img src="./img/visa.png" alt="">
+							<img src="./img/mastercard.jpg" alt="">
+							<img src="./img/skrill.webp" alt="">
+							<img src="./img/jetoncash.png" alt="">
+							<img src="./img/applepay.png" alt="">
+							<img src="./img/gpay.jpg" alt="">
+						</div>
+					</div>
+
+					<a href="#" class="main__block_link">Bonus Alın</a>
+				</div>
+				<div class="main__block">
+					<div class="main__block_img">
+						<img src="./img/Casher.png" alt="img">
+					</div>
+
+					<div class="main__block_wrap">
+						<div class="main__block_text">
+							<p>Hoş Geldin Bonusu</p>
+							<strong>Up to 5,000 TL Casino Cashback Bonus + 1,000 TL</strong>
+						</div>
+
+						<div class="main__block_rate">
+							<span class="rating-value">9.6</span>
+							<div class="stars">
+								<span data-value="1" class="active">★</span>
+								<span data-value="2" class="active">★</span>
+								<span data-value="3" class="active">★</span>
+								<span data-value="4" class="active">★</span>
+								<span data-value="5" class="active">★</span>
+							</div>
+							<p>(9825) Kullanıcı Oyu</p>
+						</div>
+
+						<div class="main__block_company">
+							<img src="./img/visa.png" alt="">
+							<img src="./img/mastercard.jpg" alt="">
+							<img src="./img/skrill.webp" alt="">
+							<img src="./img/jetoncash.png" alt="">
+							<img src="./img/applepay.png" alt="">
+							<img src="./img/gpay.jpg" alt="">
+						</div>
+					</div>
+
+					<a href="#" class="main__block_link">Bonus Alın</a>
+				</div>
+
+				<section class="block5__accordion">
+					<h2 class="title_section center">
+						Sıkça Sorulan Sorular (SSS)
+					</h2>
+
+					<div class="block5__item">
+						<button class="block5__header" aria-expanded="false">
+							<span class="block5__title">Online casino tam olarak nedir?</span>
+							<img src="./img/faq.svg" alt="ikon">
+						</button>
+						<div class="block5__content" hidden>
+							<p>Online casinolar, oyunculara geleneksel casinoları andıran popüler oyunları dijital ortamda sunan platformlardır.
+								Oyuncular slot makineleri, video poker ve rulet, blackjack, poker gibi klasik masa oyunlarını deneyimleyebilir.
+								Bu siteler, gerçek casinoların heyecanını evinizin rahatlığında yaşamanızı sağlar.</p>
+						</div>
+					</div>
+
+					<div class="block5__item">
+						<button class="block5__header" aria-expanded="false">
+							<span class="block5__title">Online casinolar nasıl çalışır?</span>
+							<img src="./img/faq.svg" alt="ikon">
+						</button>
+						<div class="block5__content" hidden>
+							<p>Modern online casinolar, oyunculara adil ve güvenli bir oyun deneyimi sunmak için güvenilir yazılım sağlayıcılarıyla çalışır.
+								Her oyun, tüm oyuncular için eşit şans sağlayan sertifikalı bir Rastgele Sayı Üreticisi (RNG) kullanır.
+								Hesap oluşturup bakiye yükledikten sonra favori oyunlarınızda bahis oynamaya başlayabilirsiniz.</p>
+						</div>
+					</div>
+
+					<div class="block5__item">
+						<button class="block5__header" aria-expanded="false">
+							<span class="block5__title">En iyi online casino hangisidir?</span>
+							<img src="./img/faq.svg" alt="ikon">
+						</button>
+						<div class="block5__content" hidden>
+							<p>Tek bir “en iyi” seçenek yoktur — ideal online casino, oyuncunun önceliklerine göre değişir.
+								Bazı oyuncular cömert hoş geldin bonuslarını ve hızlı ödemeleri tercih ederken, bazıları geniş oyun yelpazesi veya 7/24 müşteri desteğine önem verir.
+								Ekibimiz, size en uygun platformu bulabilmeniz için en popüler siteleri inceledi ve karşılaştırdı.</p>
+						</div>
+					</div>
+				</section>
+
+			</div>
+		</main>
+	</div>
+	<footer class="footer" id="footer">
+		<div class="container">
+		<div class="footer__links_footer">
+			<a href="./" class="footer__img1">
+				<img src="./img/footer_1.svg" alt="logo">
+			</a>
+			<a href="./" class="footer__img2">
+				<img src="./img/footer_2.svg" alt="logo">
+				<span>
+					SADECE 18 YAŞ VE ÜZERİ KİŞİLER İÇİN
+				</span>
+			</a>
+		</div>
+	</div>
+	</footer>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const dateElement = document.getElementById("currentDate");
+
+			const options = { year: 'numeric', month: 'short', day: '2-digit' };
+			const today = new Date();
+			const formattedDate = today.toLocaleDateString('en-US', options);
+
+			dateElement.textContent = formattedDate;
+		});
+	</script>
+	<script>
+		document.querySelectorAll('.stars').forEach(starContainer => {
+			const stars = starContainer.querySelectorAll('span');
+			let currentRating = starContainer.dataset.initial || 5;
+
+			stars.forEach(star => {
+				star.addEventListener('mouseover', function() {
+					resetHover(stars);
+					highlightStars(stars, this.dataset.value);
+				});
+
+				star.addEventListener('mouseout', () => resetHover(stars));
+
+				star.addEventListener('click', function() {
+					currentRating = this.dataset.value;
+					setActiveStars(stars, currentRating);
+					console.log('Рейтинг выбран:', currentRating);
+				});
+			});
+
+			function highlightStars(stars, value) {
+				stars.forEach(s => {
+					if (s.dataset.value <= value) s.classList.add('hover');
+				});
+			}
+
+			function resetHover(stars) {
+				stars.forEach(s => s.classList.remove('hover'));
+			}
+
+			function setActiveStars(stars, value) {
+				stars.forEach(s => {
+					s.classList.toggle('active', s.dataset.value <= value);
+				});
+			}
+		});
+	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>
