@@ -410,7 +410,7 @@ body.pc .header__nav ul li a:hover::after {
 
 /* Index.html */
 .main {
-  padding: 15rem 0 10rem;
+  padding: 5rem 0 10rem;
 }
 .main__text {
   max-width: 71rem;
